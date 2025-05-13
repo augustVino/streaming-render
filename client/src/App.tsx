@@ -29,8 +29,8 @@ function App() {
           const data = JSON.parse(event.data);
           const newChunk = data.content;
 
-          // 更新内容
-          setContent((prev) => prev + newChunk);
+          // 更新内容 - 使用函数形式确保基于最新状态更新
+          setContent((prevContent) => prevContent + newChunk);
         } catch (error) {
           console.error('解析数据时出错:', error);
         }
