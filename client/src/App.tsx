@@ -1,3 +1,7 @@
+/**
+ * @see https://developer.chrome.com/docs/ai/render-llm-responses?hl=zh-cn#dom_sanitizer_and_streaming_markdown_parser
+ */
+
 import React from 'react';
 import { useStream } from './useStream';
 import StreamingRenderer from './StreamingRenderer';
