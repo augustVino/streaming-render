@@ -153,8 +153,6 @@ export default function StreamingRenderer({ content, isLoading }: StreamingRende
         border: '1px solid #ccc',
         padding: '20px',
         minHeight: '300px',
-        width: '800px',
-        margin: '0 auto',
         textAlign: 'left',
         overflow: 'auto'
       }}

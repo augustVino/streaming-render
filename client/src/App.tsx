@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import './App.css';
 import StreamingRenderer from './StreamingRenderer';
+import MarkedRenderer from './MarkedRenderer';
+import './App.css';
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -58,9 +59,16 @@ function App() {
         </button>
       </div>
 
+      <h2>渲染结果:</h2>
       <div className="render-area">
-        <h2>渲染结果:</h2>
-        <StreamingRenderer content={content} isLoading={isLoading} />
+        <div className="render-area-item">
+          <h3>marked</h3>
+          <MarkedRenderer content={content} isLoading={isLoading} />
+        </div>
+        <div className="render-area-item">
+          <h3>streaming-markdown</h3>
+          <StreamingRenderer content={content} isLoading={isLoading} />
+        </div>
       </div>
     </div>
   );
