@@ -1,0 +1,16 @@
+{
+  "name": "streaming-render",
+  "version": "1.0.0",
+  "description": "Streaming markdown renderer with frontend and backend",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "build": "pnpm --filter client build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
